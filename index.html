@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr-eng-arabe">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DigiClass</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
+
     <div class="logo">
         <span>🤝</span> DigiClass
     </div>
@@ -21,17 +25,24 @@
         <a href="#resources">Ressources</a>
     </nav>
 
-    <button class="login-btn">Se connecter</button>
+    <button class="login-btn">
+        Se connecter
+    </button>
+
 </header>
 
 
 <main>
 
     <!-- HERO -->
+
     <section id="home" class="hero">
 
         <div class="hero-text">
-            <span class="badge">Infrastructure Digitale</span>
+
+            <span class="badge">
+                Infrastructure Digitale
+            </span>
 
             <h1>
                 Apprenez ensemble.<br>
@@ -45,82 +56,181 @@
             </p>
 
             <div class="hero-buttons">
-                <button class="primary-btn" onclick="openQuestion()">
+
+                <button
+                    class="primary-btn"
+                    onclick="openQuestion()">
                     + Poser une question
                 </button>
 
-                <button class="secondary-btn" onclick="scrollToQuestions()">
+                <button
+                    class="secondary-btn"
+                    onclick="scrollToQuestions()">
                     Voir les questions
                 </button>
+
             </div>
+
         </div>
 
+
         <div class="hero-card">
+
             <div class="floating-card card-one">
+
                 <span>❓</span>
+
                 <div>
                     <strong>Question</strong>
                     <small>5 réponses</small>
                 </div>
+
             </div>
 
+
             <div class="floating-card card-two">
+
                 <span>⭐</span>
+
                 <div>
                     <strong>Meilleure réponse</strong>
                     <small>Validée</small>
                 </div>
+
             </div>
 
+
             <div class="network-circle">
-                <div>DC</div>
+
+                <div>
+                    DC
+                </div>
+
             </div>
+
         </div>
 
     </section>
 
 
     <!-- COURSES -->
+
     <section id="courses" class="section">
 
         <div class="section-header">
+
             <div>
-                <span class="section-label">APPRENDRE</span>
-                <h2>Nos cours</h2>
+
+                <span class="section-label">
+                    APPRENDRE
+                </span>
+
+                <h2>
+                    Nos cours
+                </h2>
+
             </div>
 
-            <button class="text-btn">Voir tout →</button>
+            <button class="text-btn">
+                Voir tout →
+            </button>
+
         </div>
+
 
         <div class="course-grid">
 
-           <div class="course-card" onclick="courseClicked('Réseaux')">
-    <div class="course-icon">🌐</div>
-    <h3>Réseaux</h3>
-    <p>LAN, WAN, IP, protocoles et réseaux.</p>
-    <span>24 questions</span>
-</div>
 
-          <div class="course-card" onclick="courseClicked('Réseaux')">
-    <div class="course-icon">🌐</div>
-    <h3>Réseaux</h3>
-    <p>LAN, WAN, IP, protocoles et réseaux.</p>
-    <span>24 questions</span>
-</div>
+            <div
+                class="course-card"
+                onclick="courseClicked('Réseaux')">
 
-        <div class="course-card" onclick="courseClicked('Réseaux')">
-    <div class="course-icon">🌐</div>
-    <h3>Réseaux</h3>
-    <p>LAN, WAN, IP, protocoles et réseaux.</p>
-    <span>24 questions</span>
-</div>
+                <div class="course-icon">
+                    🌐
+                </div>
 
-    <div class="course-card" onclick="courseClicked('Réseaux')">
-    <div class="course-icon">🌐</div>
-    <h3>Réseaux</h3>
-    <p>LAN, WAN, IP, protocoles et réseaux.</p>
-    <span>24 questions</span>
-</div>
+                <h3>
+                    Réseaux
+                </h3>
+
+                <p>
+                    LAN, WAN, IP, protocoles et réseaux.
+                </p>
+
+                <span>
+                    24 questions
+                </span>
+
+            </div>
+
+
+            <div
+                class="course-card"
+                onclick="courseClicked('Systèmes')">
+
+                <div class="course-icon">
+                    🖥️
+                </div>
+
+                <h3>
+                    Systèmes
+                </h3>
+
+                <p>
+                    Windows, Linux et administration.
+                </p>
+
+                <span>
+                    18 questions
+                </span>
+
+            </div>
+
+
+            <div
+                class="course-card"
+                onclick="courseClicked('Infrastructure Digitale')">
+
+                <div class="course-icon">
+                    ⚙️
+                </div>
+
+                <h3>
+                    Infrastructure Digitale
+                </h3>
+
+                <p>
+                    Infrastructure et technologies digitales.
+                </p>
+
+                <span>
+                    31 questions
+                </span>
+
+            </div>
+
+
+            <div
+                class="course-card"
+                onclick="courseClicked('Algorithmique')">
+
+                <div class="course-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Algorithmique
+                </h3>
+
+                <p>
+                    Algorithmes, logique et programmation.
+                </p>
+
+                <span>
+                    15 questions
+                </span>
+
+            </div>
 
         </div>
 
@@ -128,39 +238,68 @@
 
 
     <!-- QUESTIONS -->
-    <section id="questions" class="section questions-section">
+
+    <section
+        id="questions"
+        class="section questions-section">
 
         <div class="section-header">
+
             <div>
-                <span class="section-label">COMMUNAUTÉ</span>
-                <h2>Questions récentes</h2>
+
+                <span class="section-label">
+                    COMMUNAUTÉ
+                </span>
+
+                <h2>
+                    Questions récentes
+                </h2>
+
             </div>
 
-            <button class="primary-btn small" onclick="openQuestion()">
+
+            <button
+                class="primary-btn small"
+                onclick="openQuestion()">
+
                 + Poser une question
+
             </button>
+
         </div>
 
 
+        <!-- RECHERCHE -->
+
         <div class="search-box">
+
             🔍
+
             <input
                 id="searchInput"
                 type="text"
                 placeholder="Rechercher une question..."
-                onkeyup="searchQuestions()"
-            >
+                onkeyup="searchQuestions()">
+
         </div>
 
 
+        <!-- LISTE DES QUESTIONS -->
+
         <div id="questionList">
+
 
             <article class="question-card">
 
                 <div class="question-main">
-                    <span class="category">Réseaux</span>
 
-                    <h3>Quelle est la différence entre LAN et WAN ?</h3>
+                    <span class="category">
+                        Réseaux
+                    </span>
+
+                    <h3>
+                        Quelle est la différence entre LAN et WAN ?
+                    </h3>
 
                     <p>
                         Je voudrais comprendre la différence entre
@@ -168,70 +307,136 @@
                     </p>
 
                     <div class="question-info">
-                        👤 Ahmed &nbsp; • &nbsp;
-                        🕐 Il y a 20 min &nbsp; • &nbsp;
+
+                        👤 Ahmed
+                        &nbsp; • &nbsp;
+
+                        🕐 Il y a 20 min
+                        &nbsp; • &nbsp;
+
                         💬 5 réponses
+
                     </div>
+
                 </div>
 
+
                 <div class="vote">
-                    <button>▲</button>
-                    <strong>12</strong>
-                    <button>▼</button>
+
+                    <button onclick="vote(this, 1)">
+                        ▲
+                    </button>
+
+                    <strong>
+                        12
+                    </strong>
+
+                    <button onclick="vote(this, -1)">
+                        ▼
+                    </button>
+
                 </div>
 
             </article>
 
 
+
             <article class="question-card">
 
                 <div class="question-main">
-                    <span class="category purple">Systèmes</span>
 
-                    <h3>RAM et ROM : quelle différence ?</h3>
+                    <span class="category purple">
+                        Systèmes
+                    </span>
+
+                    <h3>
+                        RAM et ROM : quelle différence ?
+                    </h3>
 
                     <p>
                         Quelqu'un peut-il m'expliquer simplement ?
                     </p>
 
                     <div class="question-info">
-                        👤 Yassine &nbsp; • &nbsp;
-                        🕐 Il y a 1 h &nbsp; • &nbsp;
+
+                        👤 Yassine
+                        &nbsp; • &nbsp;
+
+                        🕐 Il y a 1 h
+                        &nbsp; • &nbsp;
+
                         💬 8 réponses
+
                     </div>
+
                 </div>
 
+
                 <div class="vote">
-                    <button>▲</button>
-                    <strong>18</strong>
-                    <button>▼</button>
+
+                    <button onclick="vote(this, 1)">
+                        ▲
+                    </button>
+
+                    <strong>
+                        18
+                    </strong>
+
+                    <button onclick="vote(this, -1)">
+                        ▼
+                    </button>
+
                 </div>
 
             </article>
 
 
+
             <article class="question-card">
 
                 <div class="question-main">
-                    <span class="category green">Infrastructure</span>
 
-                    <h3>Qu'est-ce qu'une unité centrale ?</h3>
+                    <span class="category green">
+                        Infrastructure
+                    </span>
+
+                    <h3>
+                        Qu'est-ce qu'une unité centrale ?
+                    </h3>
 
                     <p>
                         Je cherche une définition simple pour le cours.
                     </p>
 
                     <div class="question-info">
-                        👤 Sara &nbsp; • &nbsp;
-                        🕐 Il y a 2 h &nbsp; • &nbsp;
+
+                        👤 Sara
+                        &nbsp; • &nbsp;
+
+                        🕐 Il y a 2 h
+                        &nbsp; • &nbsp;
+
                         💬 3 réponses
+
                     </div>
+
                 </div>
 
+
                 <div class="vote">
-                    <button>▲</button>
-                    <strong>9</strong>
-                    <button>▼</button>
+
+                    <button onclick="vote(this, 1)">
+                        ▲
+                    </button>
+
+                    <strong>
+                        9
+                    </strong>
+
+                    <button onclick="vote(this, -1)">
+                        ▼
+                    </button>
+
                 </div>
 
             </article>
@@ -242,33 +447,78 @@
 
 
     <!-- RESOURCES -->
-    <section id="resources" class="section">
+
+    <section
+        id="resources"
+        class="section">
 
         <div class="section-header">
+
             <div>
-                <span class="section-label">PARTAGE</span>
-                <h2>Ressources</h2>
+
+                <span class="section-label">
+                    PARTAGE
+                </span>
+
+                <h2>
+                    Ressources
+                </h2>
+
             </div>
+
         </div>
+
 
         <div class="resource-grid">
 
-            <div class="resource-card">
-                <div class="file-icon">📄</div>
-                <div>
-                    <h3>Résumé Réseaux - Chapitre 1</h3>
-                    <p>PDF • Partagé par Ahmed</p>
-                </div>
-                <button>↓</button>
-            </div>
 
             <div class="resource-card">
-                <div class="file-icon">📘</div>
-                <div>
-                    <h3>Cours Infrastructure Digitale</h3>
-                    <p>PDF • Partagé par Sara</p>
+
+                <div class="file-icon">
+                    📄
                 </div>
-                <button>↓</button>
+
+                <div>
+
+                    <h3>
+                        Résumé Réseaux - Chapitre 1
+                    </h3>
+
+                    <p>
+                        PDF • Partagé par Ahmed
+                    </p>
+
+                </div>
+
+                <button>
+                    ↓
+                </button>
+
+            </div>
+
+
+            <div class="resource-card">
+
+                <div class="file-icon">
+                    📘
+                </div>
+
+                <div>
+
+                    <h3>
+                        Cours Infrastructure Digitale
+                    </h3>
+
+                    <p>
+                        PDF • Partagé par Sara
+                    </p>
+
+                </div>
+
+                <button>
+                    ↓
+                </button>
+
             </div>
 
         </div>
@@ -278,58 +528,115 @@
 </main>
 
 
-<!-- QUESTION MODAL -->
 
-<div id="questionModal" class="modal">
+<!-- MODAL : NOUVELLE QUESTION -->
+
+<div
+    id="questionModal"
+    class="modal">
+
 
     <div class="modal-content">
 
-        <button class="close" onclick="closeQuestion()">×</button>
 
-        <span class="section-label">NOUVELLE QUESTION</span>
+        <button
+            class="close"
+            onclick="closeQuestion()">
 
-        <h2>Poser une question</h2>
+            ×
 
-        <label>Matière</label>
+        </button>
 
-        <select>
-            <option>Infrastructure Digitale</option>
-            <option>Réseaux</option>
-            <option>Systèmes</option>
-            <option>Algorithmique</option>
+
+        <span class="section-label">
+            NOUVELLE QUESTION
+        </span>
+
+
+        <h2>
+            Poser une question
+        </h2>
+
+
+        <label>
+            Matière
+        </label>
+
+
+        <select id="questionCategory">
+
+            <option>
+                Infrastructure Digitale
+            </option>
+
+            <option>
+                Réseaux
+            </option>
+
+            <option>
+                Systèmes
+            </option>
+
+            <option>
+                Algorithmique
+            </option>
+
         </select>
 
-        <label>Titre</label>
+
+        <label>
+            Titre
+        </label>
+
 
         <input
+            id="questionTitle"
             type="text"
-            placeholder="Ex : Comment fonctionne une adresse IP ?"
-        >
+            placeholder="Ex : Comment fonctionne une adresse IP ?">
 
-        <label>Votre question</label>
+
+        <label>
+            Votre question
+        </label>
+
 
         <textarea
-            placeholder="Expliquez votre question..."
-        ></textarea>
+            id="questionText"
+            placeholder="Expliquez votre question...">
+        </textarea>
 
-        <button class="primary-btn full">
+
+        <button
+            class="primary-btn full"
+            onclick="publishQuestion()">
+
             Publier la question
+
         </button>
+
 
     </div>
 
 </div>
 
 
+
+<!-- FOOTER -->
+
 <footer>
 
     <div class="logo">
-        <span>◆</span> DigiClass
+
+        <span>🤝</span>
+        DigiClass
+
     </div>
+
 
     <p>
         Apprendre ensemble, progresser ensemble.
     </p>
+
 
     <small>
         © 2026 DigiClass — Projet étudiant
@@ -338,7 +645,9 @@
 </footer>
 
 
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
